@@ -8,7 +8,7 @@ class HeaderSection extends StatelessWidget {
     // On crée un container
     return Container(
       //On lui ajoute du padding et une hauteur
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: 20,
         left: 20,
         right: 20,
@@ -17,7 +17,7 @@ class HeaderSection extends StatelessWidget {
       // On lui ajoute un row
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         // On lui ajoute à l'intérieur des colonnes alignées à gauche
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gamestore/pages/home/widget/header.dart';
-import 'package:gamestore/pages/home/widget/category.dart';
-import 'package:gamestore/pages/home/widget/search.dart';
+import 'package:gamestore/pages/home/widgets/header.dart';
+import 'package:gamestore/pages/home/widgets/category.dart';
+import 'package:gamestore/pages/home/widgets/search.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -33,21 +33,21 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            const Column(
+            Column(
               children: [
-                HeaderSection(),
-                SearchSection(),
+                const HeaderSection(),
+                const SearchSection(),
                 CategorySection(),
               ],
             )
           ],
         ),
       ),
-      bottomNavigationBar: NavigationBar(),
+      bottomNavigationBar: navigationBar(),
     );
   }
 
-  Widget NavigationBar() {
+  Widget navigationBar() {
     return Container(
       color: const Color(0xfff6f8ff),
       child: Container(
